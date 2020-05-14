@@ -1,4 +1,4 @@
-# Responsive-Podcast-Channel-Project-n3
+# Responsive-Podcast-Channel-Project-n1
 This is my first Project done in my Acamica's journey
 
 Welcome dear guest!
