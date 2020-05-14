@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+}
+/*-------------- Menu Responsive ---------------- */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li a {
+    font-size: 1.2rem;
+    padding: .5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+}
+.contenedor {
+    max-width: 100%;
+    height: 8vh;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 10000;
+}
+nav {
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    z-index: 10000;
+}
+label {
+    padding: .4rem .6rem;
+    border-radius: .3rem;
+    color: #2600E6;
+    border: 1px solid #E0E0E0;
+    cursor: pointer;
+}
+#mainmenu {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #E0E0E0;
+    border-radius: 0 0 1rem 1rem;
+    color: #ffffff;
+    z-index: 2;
+    background: #0575E6;   
+    background: linear-gradient(to left, #021B79, #0575E6); 
+    display: none;
+}
+li {
+    margin-bottom: 1rem;
+}
+.sidebar_trigger {
+    display: none;
+ }
+.sidebar_trigger:checked + label > .sidebar_button-open {
+    display: none;
+ }
+.sidebar_trigger:not(:checked) + label > .sidebar_button-closed {
+    display: none;
+ }
+ input[type="checkbox"]:checked ~ #mainmenu {
+    display: block;
+}
+#mainmenu ul li a:hover {
+    transition: .5s;
+    font-weight: bold;
+    color: rgb(141, 144, 144)
+}
+/* ---------------Sección UNO------------- */
+.uno {
+    margin: 3rem 3rem 3rem;
+}
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    font-size: 3rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+}
+.dot {
+    color: #2600E6;
+    font-weight: bold;
+}
+.uno p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    margin: 2rem 0 3rem 0;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+.uno a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    background: linear-gradient(to right, #0575E6, #00F260); 
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+    width: 75%; 
+    cursor: pointer;
+    z-index: -9;
+    text-decoration: none;
+    padding: 1rem 3rem;
+}
+.uno a:hover {
+    background: linear-gradient(to top, #1CB5E0, #000046);
+    color: #ffffff;
+}
+/* -----------episodios-------- */
+.episodios {
+    width: 100vw;
+    background:linear-gradient(180deg, rgba(0,0,255,1) 0%, rgba(0,0,163,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.episodios h2 {
+    color: #ffffff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.7rem;
+    margin: 1rem;
+    font-weight: normal;
+    align-self: flex-start;
+}
+.reproductores {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reproductores iframe {
+    width: 90%;
+    margin: 1rem 1rem 0 1rem;
+    border: 0;
+}
+.polygonotop {
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+.polygonoend {
+    transform: rotate(180deg);
+    width: 100%;
+    height: 130px;
+    position: relative;
+}
+/* ------The Secret History of Women in Coding -----*/
+.nosotros {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.women {
+    transform: translateY(-5rem);
+    cursor: pointer;
+    z-index: 0;
+}
+.epigrafe {
+    margin-top: -4rem;
+}
+.epigrafe h2 {
+    display: block;
+    position: relative;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight: initial;
+    font-size: 2.5rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin: 5%;
+}
+.epigrafe p {
+    padding: 1rem;
+    width: 22rem;
+    position: relative;
+    color: rgb(82, 79, 79); 
+    letter-spacing: 0;
+    line-height: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    display: block;
+}
+.nosotros a img{
+    width: 360px;
+    height: 519px;
+}
+/* ---------Invitados Estelares--------- */
+.fotoscontenedor img { 
+    width: 100%;
+}
+.estelares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.estelares h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: initial;
+    margin: 3rem 1.5rem 1rem;
+}
+/* -------------Topicos------------ */
+.topicos {
+    position: relative;
+}
+.topicos h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: initial;
+    margin: 3rem 1rem 2rem;
+}
+.topicos ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 130px;
+}
+.topicos ul li {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.texto {
+    padding-top: 1vh;
+    font-family: 'IMB Plex Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* ------------Ultimas Novedades--------------- */
+.novedades{
+    width: 100vw;
+    background:linear-gradient(180deg, rgba(0,0,255,1) 0%, rgba(0,0,163,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
+.polygono {
+    width:100%;
+    height: 40vh;
+    position: relative;
+}
+.ultimotexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+.ultimotexto h2 {
+    /* display: flex; */
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-weight: 100;
+    transform: translate(1vw, -28vh);
+    font-size: 2.7rem;
+    color: #fff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+}
+.boton a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    background: linear-gradient(to right, #0575E6, #00F260);
+    line-height: 4rem;
+    text-decoration: none;  
+    cursor: pointer;
+    z-index: -9;
+    text-decoration: none;
+    padding: 1rem 3rem;
+}
+.boton a:hover {
+    background: linear-gradient(to top, #1CB5E0, #000046);
+    color: #ffffff;
+}
+/*-----------footer-------------- */
+footer {
+    min-height: 20vh;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 30px;
+    padding: 1.5rem 1rem 2rem;
+}
+footer .iconos {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.iconos a i {
+    color: #000000;
+}
+@media screen and (min-width: 768px) {
+    
+    label {
+        display: none;
+    }
+    #mainmenu {
+        position: initial;
+        flex-basis: 60%;
+        padding: 0 1rem;
+        border-bottom: 0;
+        z-index: 1;
+        display: block;
+        background: #ffffff;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        margin-bottom: 0;
+    }
+    #mainmenu ul li a {
+        color: #060A24;
+    }
+    #mainmenu ul li a:hover {
+        transition: 1s;
+        font-weight: bold;
+        color: rgb(141, 144, 144)
+    }
+    .uno p {
+        width: 55vw;
+    }
+    .uno a {
+        width: 25vw;
+        padding: 1rem 4rem;
+    }
+/* ---------------- */
+    .episodios h2 {
+        font-size: 3rem;
+        margin: 3rem 0 1rem 6rem;
+    }
+    .reproductores {
+        display: flex;
+        width:100vw;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    .reproductores iframe {
+        width: 30rem;
+        border-radius: 5%;
+    }
+    /* ---------------- */
+    .polygonoend {
+        height: 170px;
+    }
+    .nosotros {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .women {
+        position: relative;
+        justify-self: center;
+        top: -10%;
+    }
+    .epigrafe {
+        width: 25rem;
+        position: relative;
+        top: -30%;
+        margin-top: -125px;
+    }
+    /* ---------------- */
+    .estelares h2 {
+        align-self: normal;
+    }
+    .fotoscontenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    /* --------------- */
+    .topicos ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .texto {
+        font-size: 1.2rem;
+    }
+    .novedades .polygono {
+        height: 68vh;
+    }
+    footer {
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .polypoly {
+        height: 75vh;
+        width: 100%;
+    }
+    .boton {
+        transform: translate(1vw, -15vh);
+    }
+}
